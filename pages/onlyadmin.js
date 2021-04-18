@@ -1,6 +1,6 @@
 import BasePage from "components/BasePage";
-import BaseLayout from "components/Layouts/BaseLayout";
-import withAuth from 'hoc/withAuth';
+import BaseLayout from "components/layouts/BaseLayout";
+import withAuthHoc from 'hoc/withAuth';
 
 
 const OnlyAdmin = ({user, loading}) => {
@@ -14,4 +14,4 @@ const OnlyAdmin = ({user, loading}) => {
    
   }
 
-  export default withAuth(OnlyAdmin)('admin');
+  export default withAuthHoc(OnlyAdmin)('admin');

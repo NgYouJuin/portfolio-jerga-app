@@ -1,5 +1,5 @@
-import useSWR from 'swr';
 import { fetcher } from 'actions';
+import useSWR from 'swr';
 
 // export const useGetUser = () => {
 //   const { data, error, ...rest} = useSWR('/api/v1/me', fetcher);

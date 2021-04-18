@@ -1,6 +1,6 @@
 import BasePage from "components/BasePage";
-import BaseLayout from "components/Layouts/BaseLayout";
-import withAuth from 'hoc/withAuth';
+import BaseLayout from "components/layouts/BaseLayout";
+import withAuthHoc from 'hoc/withAuth';
 import { Row, Col} from 'reactstrap';
 import PortfolioForm from "components/PortfolioForm";
 import {useCreatePortfolio} from'actions/portfolios';
@@ -27,4 +27,4 @@ const PortfoilioNew = ({user, loading: userLoading}) => {
     )
   }
   
-  export default withAuth(PortfoilioNew)('admin');
+  export default withAuthHoc(PortfoilioNew)('admin');

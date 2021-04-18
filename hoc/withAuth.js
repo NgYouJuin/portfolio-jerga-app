@@ -4,7 +4,7 @@ import { useGetUser } from 'actions/user';
 import Redirect from 'components/shared/Redirect';
 import { isAuthorized } from 'utils/auth0';
 
-const withAuth = Component => role => {
+const withAuthHoc = Component => role => {
   return props => {
     const { data, loading } = useGetUser();
     // console.log(role && !isAuthorized(data, role))
@@ -23,4 +23,4 @@ const withAuth = Component => role => {
   }
 }
 
-export default withAuth;
+export default withAuthHoc;

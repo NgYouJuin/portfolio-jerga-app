@@ -1,6 +1,6 @@
 import BasePage from "components/BasePage";
-import BaseLayout from "components/Layouts/BaseLayout";
-import withAuth from 'hoc/withAuth'
+import BaseLayout from "components/layouts/BaseLayout";
+import withAuthHoc from 'hoc/withAuth'
 import { useCreateBlog } from "actions/blogs";
 import { useRouter } from "next/router";
 import { toast } from "react-toastify";
@@ -29,4 +29,4 @@ const BlogEditor = ({user, loading}) => {
     )
   }
   
-  export default withAuth(BlogEditor)('admin');
+  export default withAuthHoc(BlogEditor)('admin');

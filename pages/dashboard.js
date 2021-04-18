@@ -1,6 +1,6 @@
 import BasePage from "components/BasePage";
-import BaseLayout from "components/Layouts/BaseLayout";
-import withAuth from 'hoc/withAuth'
+import BaseLayout from "components/layouts/BaseLayout";
+import withAuthHoc from 'hoc/withAuth'
 import { Row, Col, Button} from 'reactstrap';
 import Masthead from 'components/shared/Masthead';
 import Link from 'next/link'
@@ -82,7 +82,7 @@ const Dashborad = ({user, loading}) => {
     )
   }
   
-  export default withAuth(Dashborad)('admin');
+  export default withAuthHoc(Dashborad)('admin');
 
 // import BasePage from "@/components/BasePage";
 // import BaseLayout from "@/components/Layouts/BaseLayout";

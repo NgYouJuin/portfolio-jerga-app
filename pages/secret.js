@@ -1,6 +1,6 @@
 import BasePage from "components/BasePage";
-import BaseLayout from "components/Layouts/BaseLayout";
-import withAuth from 'hoc/withAuth';
+import BaseLayout from "components/layouts/BaseLayout";
+import withAuthHoc from 'hoc/withAuth';
 
 
 const Secret = ({user, loading}) => {
@@ -31,4 +31,4 @@ const Secret = ({user, loading}) => {
 //     <Component title="Hello World" {...props}/>
 
   
-export default withAuth(Secret)();
+export default withAuthHoc(Secret)();

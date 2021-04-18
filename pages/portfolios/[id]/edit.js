@@ -1,7 +1,7 @@
-import BaseLayout from "components/Layouts/BaseLayout"
+import BaseLayout from "components/layouts/BaseLayout"
 import {useRouter} from "next/router"
 import BasePage from "components/BasePage"
-import withAuth from 'hoc/withAuth'
+import withAuthHoc from 'hoc/withAuth'
 import {useGetPortfolio} from 'actions/portfolios'
 import PortfolioForm from "components/PortfolioForm";
 import { Row, Col} from 'reactstrap';
@@ -47,4 +47,4 @@ const PortfolioEdit  = ({user}) => {
     )
 }
   
-export default withAuth(PortfolioEdit)('admin');
+export default withAuthHoc(PortfolioEdit)('admin');

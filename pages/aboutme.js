@@ -1,8 +1,7 @@
 import BasePage from "components/BasePage";
-import BaseLayout from "components/Layouts/BaseLayout";
+import BaseLayout from "components/layouts/BaseLayout";
 import {useGetUser} from 'actions/user'
 import { Row, Col} from 'reactstrap';
-import { useEffect } from "react";
 
 const AboutMe = () => {
     const {data, loading} = useGetUser()

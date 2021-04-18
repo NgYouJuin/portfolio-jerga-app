@@ -1,4 +1,4 @@
-import BaseLayout from "components/Layouts/BaseLayout"
+import BaseLayout from "components/layouts/BaseLayout"
 import {useRouter} from "next/router"
 import BasePage from "components/BasePage"
 import {useGetUser} from 'actions/user'
