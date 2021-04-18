@@ -1,5 +1,5 @@
-import BasePage from "@/components/BasePage";
-import BaseLayout from "@/components/Layouts/BaseLayout";
+import BasePage from "components/BasePage";
+import BaseLayout from "components/Layouts/BaseLayout";
 import withAuth from 'hoc/withAuth'
 import { Row, Col, Button} from 'reactstrap';
 import Masthead from 'components/shared/Masthead';

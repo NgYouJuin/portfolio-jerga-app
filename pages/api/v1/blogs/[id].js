@@ -1,4 +1,4 @@
-import auth0 from '@/utils/auth0';
+import auth0 from 'utils/auth0';
 import BlogApi from "lib/api/blogs";
 
 export default async function handleBlog(req, res) {

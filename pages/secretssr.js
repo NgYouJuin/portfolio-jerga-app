@@ -1,6 +1,6 @@
-import BaseLayout from '@/components/layouts/BaseLayout';
-import BasePage from '@/components/BasePage';
-import {withAuth} from '@/utils/auth0'
+import BaseLayout from 'components/layouts/BaseLayout';
+import BasePage from 'components/BasePage';
+import {withAuth} from 'utils/auth0'
 
 const SecretSSR = ({user, title}) => {
   return (

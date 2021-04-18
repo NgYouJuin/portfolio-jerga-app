@@ -1,10 +1,10 @@
-import BasePage from "@/components/BasePage";
-import BaseLayout from "@/components/Layouts/BaseLayout";
-import withAuth from '@/hoc/withAuth';
+import BasePage from "components/BasePage";
+import BaseLayout from "components/Layouts/BaseLayout";
+import withAuth from 'hoc/withAuth';
 import { Row, Col} from 'reactstrap';
-import PortfolioForm from "@/components/PortfolioForm";
-import {useCreatePortfolio} from'@/actions/portfolios';
-import Redirect from '@/components/shared/Redirect'
+import PortfolioForm from "components/PortfolioForm";
+import {useCreatePortfolio} from'actions/portfolios';
+import Redirect from 'components/shared/Redirect'
 
 const PortfoilioNew = ({user, loading: userLoading}) => {
     const [createPortfolio, {data, loading, error}] = useCreatePortfolio()

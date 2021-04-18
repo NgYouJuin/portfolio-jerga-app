@@ -13,7 +13,7 @@ import {
   DropdownMenu,
   DropdownToggle
 } from 'reactstrap';
-import {isAuthorized} from "@/utils/auth0"
+import {isAuthorized} from "utils/auth0"
 import ActiveLink from './ActiveLink';
 
 const BsNavLink = props => {

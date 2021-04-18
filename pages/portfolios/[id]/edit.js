@@ -1,11 +1,11 @@
-import BaseLayout from "@/components/Layouts/BaseLayout"
+import BaseLayout from "components/Layouts/BaseLayout"
 import {useRouter} from "next/router"
-import BasePage from "@/components/BasePage"
-import withAuth from '@/hoc/withAuth'
-import {useGetPortfolio} from '@/actions/portfolios'
-import PortfolioForm from "@/components/PortfolioForm";
+import BasePage from "components/BasePage"
+import withAuth from 'hoc/withAuth'
+import {useGetPortfolio} from 'actions/portfolios'
+import PortfolioForm from "components/PortfolioForm";
 import { Row, Col} from 'reactstrap';
-import { useUpdatePortfolio } from "@/actions/portfolios";
+import { useUpdatePortfolio } from "actions/portfolios";
 import { toast } from 'react-toastify';
 
 

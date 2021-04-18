@@ -1,6 +1,6 @@
-import BasePage from "@/components/BasePage";
-import BaseLayout from "@/components/Layouts/BaseLayout";
-import withAuth from '@/hoc/withAuth';
+import BasePage from "components/BasePage";
+import BaseLayout from "components/Layouts/BaseLayout";
+import withAuth from 'hoc/withAuth';
 
 
 const Secret = ({user, loading}) => {

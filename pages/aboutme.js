@@ -1,6 +1,6 @@
-import BasePage from "@/components/BasePage";
-import BaseLayout from "@/components/Layouts/BaseLayout";
-import {useGetUser} from '@/actions/user'
+import BasePage from "components/BasePage";
+import BaseLayout from "components/Layouts/BaseLayout";
+import {useGetUser} from 'actions/user'
 import { Row, Col} from 'reactstrap';
 import { useEffect } from "react";
 

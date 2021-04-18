@@ -1,6 +1,6 @@
-import BasePage from "@/components/BasePage";
-import BaseLayout from "@/components/Layouts/BaseLayout";
-import withAuth from '@/hoc/withAuth'
+import BasePage from "components/BasePage";
+import BaseLayout from "components/Layouts/BaseLayout";
+import withAuth from 'hoc/withAuth'
 import { useGetBlog, useUpdateBlog } from "actions/blogs";
 import { useRouter } from "next/router";
 import { toast } from "react-toastify";
